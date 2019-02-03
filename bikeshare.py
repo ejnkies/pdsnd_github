@@ -2,10 +2,12 @@ import time
 import pandas as pd
 import numpy as np
 
+# Bikeshare datafiles from Motivate
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# Function to recieve user inputs / filters
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
