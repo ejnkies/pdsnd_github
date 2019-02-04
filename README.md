@@ -21,12 +21,12 @@ Users can explore detailed information of bikeshare data from __Chicago__, __NYC
 ### Credits :metal:
 Starter code provided by:
 __Udacity, Inc.__
-https://www.udacity.com/ - automatic!
-[Udacity] (https://www.udacity.com/)
+https://www.udacity.com/
+[Udacity](https://www.udacity.com/)
 
 Bikeshare data provided by:
 __Motivate__
-https://www.motivateco.com/ - automatic!
+https://www.motivateco.com/ 
 [Motivate](https://www.motivateco.com/)
 
 :bowtie:
