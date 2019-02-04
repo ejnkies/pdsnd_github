@@ -45,6 +45,7 @@ def get_filters():
         if day not in days:
             print("\nDid you enter the full day name (i.e. Sunday) - Nope; Try again!")
 
+    restart()
     print('-'*40)
     return city, month, day
 
@@ -177,16 +178,22 @@ def user_stats(df):
     print('-'*40)
 
 def u_data(df):
-    """Displays underlying data to user 5 rows at a time, until the user exits"""
+    """Displays underlying data to user 10 rows at a time, until the user exits"""
     underlying_data = input("\nWould you like to see the underlying data? If so, type YES: ").lower()
     start = 0
-    end = 5
+    end = 10
 
     while underlying_data == 'yes':
         print(df.iloc[start:end])
-        start += 5
-        end += 5
+        start += 10
+        end += 10
         underlying_data = input("\nWould you like to continue viewing the underlying data? If so, type YES: ").lower()
+
+def restart():
+    restart = input('\nWould you like to continue? Enter YES to continue.\n')
+    if restart.lower() != 'yes':
+        quit()
+
 
 def main():
     while True:
@@ -198,10 +205,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         u_data(df)
-
-        restart = input('\nWould you like to restart? Enter YES to continue.\n')
-        if restart.lower() != 'yes':
-            break
+        restart()
 
 
 if __name__ == "__main__":
