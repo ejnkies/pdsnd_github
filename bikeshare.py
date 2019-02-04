@@ -43,6 +43,7 @@ def get_filters():
         if day not in days:
             print("\nDid you enter the full day name (i.e. Sunday) - Nope; Try again!")
 
+    restart()
     print('-'*40)
     return city, month, day
 
@@ -187,7 +188,7 @@ def u_data(df):
         underlying_data = input("\nWould you like to continue viewing the underlying data? If so, type YES: ").lower()
 
 def restart():
-    restart = input('\nWould you like to restart? Enter YES to continue.\n')
+    restart = input('\nWould you like to continue? Enter YES to continue.\n')
     if restart.lower() != 'yes':
         quit()
 
